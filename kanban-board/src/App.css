@@ -1,0 +1,167 @@
+.app-container {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: space-around;
+}
+
+.column {
+  width: 300px;
+  background-color: #ddd;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.ticket {
+  width: 250px; 
+  min-height: 150px; 
+  max-height: 200px; 
+  overflow: hidden; 
+  margin-bottom: 15px; 
+  padding: 10px; 
+  border: 1px solid #ddd; 
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+  background-color: white;
+}
+
+
+.display-container {
+  position: relative;
+  display: inline-block;
+}
+
+.display-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.filter-icon {
+  margin-right: 8px;
+}
+
+.selector-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.selectors {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 10px;
+}
+
+
+.selectors-card {
+  margin-left: 20px; 
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+
+.selector-item label {
+  font-size: 12px;
+  font-weight: bold;
+}
+.tag {
+  color: grey;
+}
+
+.user-circle {
+  position: relative;
+  display: inline-block;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.status-dot {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-color: green; 
+}
+
+.status-dot.offline {
+  background-color: red;
+}
+
+.status-dot.online {
+  background-color: green;
+}
+
+.status-dot.away {
+  background-color: yellow;
+}
+
+
+.kanban-column .ticket {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.ticket-content {
+  margin-left: 10px;
+}
+
+.priority-label {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.ticket-content h3 {
+  font-size: 14px;
+}
+
+.ticket-content .tags span {
+  font-size: 12px; 
+}
+
+.ticket-content .priority-label {
+  font-size: 12px; 
+}
+.grey-dot {
+  color: grey;
+  margin-right: 5px;
+  font-size: 1.2em;
+}
+
+.grey-dots {
+  color: grey;
+  margin-left: 5px;
+  font-size: 1.2em;
+}
+.ticket-id {
+  font-size: 0.85em;
+  color: #555;
+  margin-top: 5px;
+}
